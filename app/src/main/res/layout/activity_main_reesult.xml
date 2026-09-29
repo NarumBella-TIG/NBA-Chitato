@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E7"
+    tools:context=".MainReesultActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_header"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="24dp"
+                android:paddingBottom="32dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/chip"
+                    android:text="Chitato"
+                    android:textColor="#4E2A14"
+                    android:textSize="40sp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="Kemasan Chitato"
+                    android:elevation="8dp"
+                    app:srcCompat="@drawable/chit" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="Keripik kentang bergelombang dengan berbagai pilihan rasa."
+                android:textColor="#5D4037"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_card"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Komposisi Gizi"
+                    android:textColor="#4E2A14"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="per sajian"
+                    android:textColor="#9E9E9E"
+                    android:textSize="13sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Energi total"
+                        android:textColor="#5D4037"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="150 kkal"
+                        android:textColor="#E65100"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lemak total"
+                        android:textColor="#5D4037"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9 g"
+                        android:textColor="#E65100"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lemak jenuh"
+                        android:textColor="#5D4037"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 g"
+                        android:textColor="#E65100"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Protein"
+                        android:textColor="#5D4037"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 g"
+                        android:textColor="#E65100"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Karbohidrat total"
+                        android:textColor="#5D4037"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16 g"
+                        android:textColor="#E65100"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gula"
+                        android:textColor="#5D4037"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 g"
+                        android:textColor="#E65100"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Natrium"
+                        android:textColor="#5D4037"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200 mg"
+                        android:textColor="#E65100"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
