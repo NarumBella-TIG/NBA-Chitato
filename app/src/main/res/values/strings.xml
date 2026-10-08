@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">NBA-Chitato</string>
+    <string name="app_name">PalmSys</string>
+    <string name="judul_aplikasi">PalmSys Finance</string>
+    <string name="tagline">Catat keuangan kebun sawit dengan mudah</string>
+    <string name="tombol_snack">MyProject</string>
+    <string name="tombol_web">Website BPDP Sawit</string>
+    <string name="judul_snack">Detail Snack</string>
+    <string name="judul_web">BPDP Kelapa Sawit</string>
 </resources>

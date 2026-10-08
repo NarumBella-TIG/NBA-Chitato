@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Palet PalmSys (grand design) -->
+    <color name="emas_koin">#D9A441</color>
+    <color name="hijau_pelepah">#16241A</color>
+    <color name="merah_tbs">#C1512E</color>
+    <color name="krem">#FAF7F0</color>
+    <color name="krem_kartu">#F1E9D8</color>
+    <color name="hijau_daun">#5C8A52</color>
+    <color name="abu_teks">#6B7069</color>
 </resources>
