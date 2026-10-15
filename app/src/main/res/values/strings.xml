@@ -6,4 +6,11 @@
     <string name="tombol_web">Website BPDP Sawit</string>
     <string name="judul_snack">Detail Snack</string>
     <string name="judul_web">BPDP Kelapa Sawit</string>
+
+    <!-- Halaman login -->
+    <string name="selamat_datang">Selamat datang!</string>
+    <string name="sub_login">Masuk untuk mencatat keuangan kebunmu</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="tombol_masuk">Masuk</string>
 </resources>
