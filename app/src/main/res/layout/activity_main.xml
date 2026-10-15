@@ -8,11 +8,42 @@
     android:background="@color/krem"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textHalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="Halo"
+        android:textColor="@color/hijau_pelepah"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnLogout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnLogout" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/krem_kartu"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="@string/tombol_keluar"
+        android:textColor="@color/merah_tbs"
+        android:textSize="14sp"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_logout"
+        app:iconGravity="textStart"
+        app:iconTint="@color/merah_tbs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="72dp"
         android:contentDescription="Logo PalmSys"
         android:src="@drawable/logo_palmsys"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,6 +87,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textJudul" />
+
+    <Button
+        android:id="@+id/btnProfil"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="@string/tombol_profil"
+        android:textColor="@color/hijau_pelepah"
+        android:textSize="16sp"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_person"
+        app:iconGravity="textStart"
+        app:iconTint="@color/hijau_pelepah"
+        app:layout_constraintBottom_toTopOf="@id/btnSnack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnSnack"

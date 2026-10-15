@@ -6,4 +6,34 @@
     <string name="tombol_web">Website BPDP Sawit</string>
     <string name="judul_snack">Detail Snack</string>
     <string name="judul_web">BPDP Kelapa Sawit</string>
+    <string name="versi">Versi 1.0</string>
+
+    <!-- Halaman login -->
+    <string name="selamat_datang">Selamat datang!</string>
+    <string name="sub_login">Masuk untuk mencatat keuangan kebunmu</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="tombol_masuk">Masuk</string>
+
+    <!-- Halaman awal -->
+    <string name="tombol_profil">Profil Developer</string>
+    <string name="tombol_keluar">Keluar</string>
+
+    <!-- Profil developer -->
+    <string name="judul_profil">Profil Developer</string>
+    <string name="inisial">NB</string>
+    <string name="nama_dev">M. Narum Bella</string>
+    <string name="kelas_dev">3 TI F · Politeknik Caltex Riau</string>
+    <string name="peran_dev">Developer PalmSys Finance Mobile</string>
+    <string name="label_sosmed">Sosial Media</string>
+    <string name="label_instagram">Instagram</string>
+    <string name="isi_instagram">@cyumi_nba</string>
+    <string name="label_github">GitHub</string>
+    <string name="isi_github">NarumBella-TIG</string>
+    <string name="label_linkedin">LinkedIn</string>
+    <string name="isi_linkedin">Narum Bella</string>
+    <string name="label_hobi">Hobi</string>
+    <string name="isi_hobi">Bermain alat musik</string>
+    <string name="label_kekuatan">Kekuatan Terbesar</string>
+    <string name="isi_kekuatan">Cepat belajar hal baru</string>
 </resources>

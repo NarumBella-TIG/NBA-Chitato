@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AuthActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Logo PalmSys"
+        android:src="@drawable/logo_palmsys"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSelamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/plus_jakarta_sans_extrabold"
+        android:text="@string/selamat_datang"
+        android:textColor="@color/hijau_pelepah"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/imgLogo"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+    <TextView
+        android:id="@+id/textSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/plus_jakarta_sans_regular"
+        android:text="@string/sub_login"
+        android:textColor="@color/abu_teks"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/textSelamat"
+        app:layout_constraintTop_toBottomOf="@id/textSelamat" />
+
+    <EditText
+        android:id="@+id/inputUsername"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/emas_koin"
+        android:fontFamily="@font/plus_jakarta_sans_regular"
+        android:hint="@string/hint_username"
+        android:inputType="text"
+        android:textColor="@color/hijau_pelepah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textSub" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/emas_koin"
+        android:fontFamily="@font/plus_jakarta_sans_regular"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:textColor="@color/hijau_pelepah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputUsername" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/emas_koin"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="@string/tombol_masuk"
+        android:textColor="@color/hijau_pelepah"
+        android:textSize="16sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
