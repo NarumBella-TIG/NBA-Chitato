@@ -6,6 +6,7 @@
     <string name="tombol_web">Website BPDP Sawit</string>
     <string name="judul_snack">Detail Snack</string>
     <string name="judul_web">BPDP Kelapa Sawit</string>
+    <string name="versi">Versi 1.0</string>
 
     <!-- Halaman login -->
     <string name="selamat_datang">Selamat datang!</string>
