@@ -14,4 +14,22 @@
     <string name="hint_username">Username</string>
     <string name="hint_password">Password</string>
     <string name="tombol_masuk">Masuk</string>
+
+    <!-- Profil developer -->
+    <string name="judul_profil">Profil Developer</string>
+    <string name="inisial">NB</string>
+    <string name="nama_dev">M. Narum Bella</string>
+    <string name="kelas_dev">3 TI F · Politeknik Caltex Riau</string>
+    <string name="peran_dev">Developer PalmSys Finance Mobile</string>
+    <string name="label_sosmed">Sosial Media</string>
+    <string name="label_instagram">Instagram</string>
+    <string name="isi_instagram">@cyumi_nba</string>
+    <string name="label_github">GitHub</string>
+    <string name="isi_github">NarumBella-TIG</string>
+    <string name="label_linkedin">LinkedIn</string>
+    <string name="isi_linkedin">Narum Bella</string>
+    <string name="label_hobi">Hobi</string>
+    <string name="isi_hobi">Bermain alat musik</string>
+    <string name="label_kekuatan">Kekuatan Terbesar</string>
+    <string name="isi_kekuatan">Cepat belajar hal baru</string>
 </resources>
