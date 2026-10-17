@@ -43,4 +43,47 @@
     <string name="menu_transaksi">Transaksi</string>
     <string name="menu_harga">Harga</string>
     <string name="menu_lainnya">Lainnya</string>
+
+    <!-- Isi fragment (data contoh) -->
+    <string name="label_saldo">Total saldo kebun</string>
+    <string name="isi_saldo">Rp12.450.000</string>
+    <string name="ket_saldo">Tersimpan di 3 kantong</string>
+    <string name="label_total_kantong">Total di semua kantong</string>
+    <string name="kantong_kebun">Dana Kebun</string>
+    <string name="ket_kantong_kebun">Untuk operasional harian kebun</string>
+    <string name="saldo_kantong_kebun">Rp8.200.000</string>
+    <string name="kantong_pupuk">Dana Pupuk</string>
+    <string name="ket_kantong_pupuk">Disisihkan untuk pemupukan berikutnya</string>
+    <string name="saldo_kantong_pupuk">Rp2.750.000</string>
+    <string name="kantong_replanting">Dana Replanting</string>
+    <string name="ket_kantong_replanting">Tabungan peremajaan kebun</string>
+    <string name="saldo_kantong_replanting">Rp1.500.000</string>
+    <string name="label_catat">Catat transaksi</string>
+    <string name="kategori_jual_tbs">Jual TBS</string>
+    <string name="kategori_pupuk">Pupuk</string>
+    <string name="kategori_upah">Upah Panen</string>
+    <string name="kategori_alat">Alat Kebun</string>
+    <string name="label_riwayat">Transaksi terakhir</string>
+    <string name="riwayat1_judul">Jual TBS 1,2 ton</string>
+    <string name="riwayat1_ket">14 Okt · Dana Kebun</string>
+    <string name="riwayat1_nominal">+Rp3.780.000</string>
+    <string name="riwayat2_judul">Upah pemanen</string>
+    <string name="riwayat2_ket">14 Okt · Dana Kebun</string>
+    <string name="riwayat2_nominal">-Rp900.000</string>
+    <string name="riwayat3_judul">Pupuk NPK 2 karung</string>
+    <string name="riwayat3_ket">10 Okt · Dana Pupuk</string>
+    <string name="riwayat3_nominal">-Rp760.000</string>
+    <string name="label_harga_tbs">Harga TBS minggu ini (umur 10-20 tahun)</string>
+    <string name="isi_harga_tbs">Rp3.150 / kg</string>
+    <string name="ket_harga_tbs">Naik Rp40 dari minggu lalu</string>
+    <string name="label_harga_pupuk">Harga pupuk</string>
+    <string name="pupuk_npk">NPK</string>
+    <string name="pupuk_urea">Urea</string>
+    <string name="pupuk_kcl">KCl</string>
+    <string name="satuan_karung">per karung 50 kg</string>
+    <string name="harga_npk">Rp380.000</string>
+    <string name="harga_urea">Rp290.000</string>
+    <string name="harga_kcl">Rp350.000</string>
+    <string name="catatan_harga">Data contoh, belum terhubung ke server harga.</string>
+    <string name="label_lainnya">Pengaturan dan informasi</string>
 </resources>
