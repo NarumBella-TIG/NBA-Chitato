@@ -36,4 +36,11 @@
     <string name="isi_hobi">Bermain alat musik</string>
     <string name="label_kekuatan">Kekuatan Terbesar</string>
     <string name="isi_kekuatan">Cepat belajar hal baru</string>
+
+    <!-- Bottom Navigation (P7) -->
+    <string name="menu_beranda">Beranda</string>
+    <string name="menu_kantong">Kantong</string>
+    <string name="menu_transaksi">Transaksi</string>
+    <string name="menu_harga">Harga</string>
+    <string name="menu_lainnya">Lainnya</string>
 </resources>

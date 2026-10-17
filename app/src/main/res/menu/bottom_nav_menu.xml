@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/beranda"
+        android:icon="@drawable/ic_beranda"
+        android:title="@string/menu_beranda" />
+
+    <item
+        android:id="@+id/kantong"
+        android:icon="@drawable/ic_kantong"
+        android:title="@string/menu_kantong" />
+
+    <item
+        android:id="@+id/transaksi"
+        android:icon="@drawable/ic_transaksi"
+        android:title="@string/menu_transaksi" />
+
+    <item
+        android:id="@+id/harga"
+        android:icon="@drawable/ic_harga"
+        android:title="@string/menu_harga" />
+
+    <item
+        android:id="@+id/lainnya"
+        android:icon="@drawable/ic_lainnya"
+        android:title="@string/menu_lainnya" />
+
+</menu>
