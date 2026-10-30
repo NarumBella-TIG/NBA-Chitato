@@ -97,4 +97,9 @@
     <string name="hint_nama">Nama lengkap</string>
     <string name="hint_email_reg">Email</string>
     <string name="tombol_daftar">Daftar</string>
+    <string name="langkah_1">Langkah 1 dari 2</string>
+    <string name="judul_email">Daftar dengan Gmail</string>
+    <string name="sub_email">Masukkan alamat Gmail yang akan dipakai untuk akunmu</string>
+    <string name="hint_email">contoh@gmail.com</string>
+    <string name="tombol_lanjut">Lanjut</string>
 </resources>
