@@ -110,4 +110,7 @@
     <string name="label_tujuan">Ke kantong</string>
     <string name="hint_nominal_transfer">Nominal (Rp)</string>
     <string name="tombol_transfer">Transfer</string>
+
+    <!-- P8: bagikan laporan ke WhatsApp -->
+    <string name="tombol_bagikan">Bagikan Laporan ke WhatsApp</string>
 </resources>
