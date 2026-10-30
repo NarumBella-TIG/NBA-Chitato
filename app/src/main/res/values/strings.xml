@@ -86,4 +86,9 @@
     <string name="harga_kcl">Rp350.000</string>
     <string name="catatan_harga">Data contoh, belum terhubung ke server harga.</string>
     <string name="label_lainnya">Pengaturan dan informasi</string>
+
+    <!-- Registrasi dengan Gmail -->
+    <string name="judul_berhasil">Registrasi Berhasil</string>
+    <string name="sub_berhasil">Akun kamu sudah tersimpan. Silakan masuk.</string>
+    <string name="tombol_ke_login">Kembali ke Halaman Masuk</string>
 </resources>

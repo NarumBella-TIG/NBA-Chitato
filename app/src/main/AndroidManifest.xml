@@ -40,6 +40,10 @@
             android:name=".WebViewActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".Registrasi.RegisterSuccessActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
