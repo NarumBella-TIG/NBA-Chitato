@@ -91,4 +91,10 @@
     <string name="judul_berhasil">Registrasi Berhasil</string>
     <string name="sub_berhasil">Akun kamu sudah tersimpan. Silakan masuk.</string>
     <string name="tombol_ke_login">Kembali ke Halaman Masuk</string>
+    <string name="langkah_2">Langkah 2 dari 2</string>
+    <string name="judul_register">Lengkapi Data</string>
+    <string name="sub_register">Isi data berikut untuk membuat akun PalmSys</string>
+    <string name="hint_nama">Nama lengkap</string>
+    <string name="hint_email_reg">Email</string>
+    <string name="tombol_daftar">Daftar</string>
 </resources>
