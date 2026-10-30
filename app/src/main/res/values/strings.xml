@@ -102,4 +102,5 @@
     <string name="sub_email">Masukkan alamat Gmail yang akan dipakai untuk akunmu</string>
     <string name="hint_email">contoh@gmail.com</string>
     <string name="tombol_lanjut">Lanjut</string>
+    <string name="tombol_gmail">Belum punya akun? Daftar dengan Gmail</string>
 </resources>
