@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingHorizontal="24dp"
+    android:paddingBottom="32dp">
+
+    <View
+        android:id="@+id/garisPegangan"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/krem_kartu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textJudulTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/plus_jakarta_sans_extrabold"
+        android:text="@string/judul_transfer"
+        android:textColor="@color/hijau_pelepah"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/garisPegangan" />
+
+    <TextView
+        android:id="@+id/textAsal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/plus_jakarta_sans_regular"
+        android:text="Dari kantong"
+        android:textColor="@color/abu_teks"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textJudulTransfer" />
+
+    <TextView
+        android:id="@+id/textLabelTujuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="@string/label_tujuan"
+        android:textColor="@color/hijau_pelepah"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textAsal" />
+
+    <RadioGroup
+        android:id="@+id/radioTujuan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textLabelTujuan">
+
+        <RadioButton
+            android:id="@+id/radioTujuan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/emas_koin"
+            android:fontFamily="@font/plus_jakarta_sans_regular"
+            android:textColor="@color/hijau_pelepah" />
+
+        <RadioButton
+            android:id="@+id/radioTujuan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:buttonTint="@color/emas_koin"
+            android:fontFamily="@font/plus_jakarta_sans_regular"
+            android:textColor="@color/hijau_pelepah" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/inputNominal"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/emas_koin"
+        android:fontFamily="@font/plus_jakarta_sans_regular"
+        android:hint="@string/hint_nominal_transfer"
+        android:inputType="number"
+        android:textColor="@color/hijau_pelepah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioTujuan" />
+
+    <Button
+        android:id="@+id/btnTransfer"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/emas_koin"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="@string/tombol_transfer"
+        android:textColor="@color/hijau_pelepah"
+        android:textSize="16sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputNominal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

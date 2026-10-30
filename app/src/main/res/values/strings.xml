@@ -103,4 +103,11 @@
     <string name="hint_email">contoh@gmail.com</string>
     <string name="tombol_lanjut">Lanjut</string>
     <string name="tombol_gmail">Belum punya akun? Daftar dengan Gmail</string>
+
+    <!-- P8: Bottom Sheet transfer antar kantong -->
+    <string name="petunjuk_transfer">Ketuk kartu kantong untuk memindahkan dana</string>
+    <string name="judul_transfer">Pindahkan Dana</string>
+    <string name="label_tujuan">Ke kantong</string>
+    <string name="hint_nominal_transfer">Nominal (Rp)</string>
+    <string name="tombol_transfer">Transfer</string>
 </resources>

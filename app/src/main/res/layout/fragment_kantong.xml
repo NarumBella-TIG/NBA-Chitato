@@ -57,6 +57,19 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textLabelTotal" />
 
+            <TextView
+                android:id="@+id/textPetunjuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/plus_jakarta_sans_regular"
+                android:text="@string/petunjuk_transfer"
+                android:textColor="@color/abu_teks"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textTotal" />
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardDanaKebun"
                 android:layout_width="0dp"
@@ -70,7 +83,7 @@
                 app:strokeWidth="0dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textTotal">
+                app:layout_constraintTop_toBottomOf="@id/textPetunjuk">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
