@@ -83,10 +83,12 @@ class KantongFragment : Fragment() {
             if (ke == -1) {
                 Toast.makeText(requireContext(), "Pilih kantong tujuan dulu", Toast.LENGTH_SHORT).show()
             } else if (teksNominal.isEmpty() || teksNominal.toLong() <= 0) {
-                Toast.makeText(requireContext(), "Nominal belum diisi", Toast.LENGTH_SHORT).show()
+                // Pesan error tampil langsung di bawah kolom (TextInputLayout)
+                sheet.layoutNominal.error = "Nominal belum diisi"
             } else if (teksNominal.toLong() > ambilSaldo(asal)) {
-                Toast.makeText(requireContext(), "Saldo " + namaKantong[asal] + " tidak cukup", Toast.LENGTH_SHORT).show()
+                sheet.layoutNominal.error = "Saldo " + namaKantong[asal] + " tidak cukup"
             } else {
+                sheet.layoutNominal.error = null
                 val nominal = teksNominal.toLong()
                 val editor = dataKantong.edit()
                 editor.putLong(kunciKantong[asal], ambilSaldo(asal) - nominal)

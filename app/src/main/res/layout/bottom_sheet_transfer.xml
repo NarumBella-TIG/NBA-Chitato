@@ -82,19 +82,34 @@
             android:textColor="@color/hijau_pelepah" />
     </RadioGroup>
 
-    <EditText
-        android:id="@+id/inputNominal"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutNominal"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:backgroundTint="@color/emas_koin"
-        android:fontFamily="@font/plus_jakarta_sans_regular"
         android:hint="@string/hint_nominal_transfer"
-        android:inputType="number"
-        android:textColor="@color/hijau_pelepah"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeColor="@color/emas_koin"
+        app:errorEnabled="true"
+        app:helperText="@string/helper_nominal"
+        app:hintTextColor="@color/hijau_pelepah"
+        app:prefixText="Rp "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/radioTujuan" />
+        app:layout_constraintTop_toBottomOf="@id/radioTujuan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputNominal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/plus_jakarta_sans_regular"
+            android:inputType="number"
+            android:textColor="@color/hijau_pelepah" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnTransfer"
@@ -109,6 +124,6 @@
         app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputNominal" />
+        app:layout_constraintTop_toBottomOf="@id/layoutNominal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
