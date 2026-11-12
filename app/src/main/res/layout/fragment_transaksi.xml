@@ -110,6 +110,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/gridKategori" />
 
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textLabelRiwayat">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipSemua"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="@font/plus_jakarta_sans_bold"
+            android:text="@string/filter_semua" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipMasuk"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/plus_jakarta_sans_bold"
+            android:text="@string/filter_masuk" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipKeluar"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/plus_jakarta_sans_bold"
+            android:text="@string/filter_keluar" />
+
+    </com.google.android.material.chip.ChipGroup>
+
     <ListView
         android:id="@+id/listTransaksi"
         android:layout_width="0dp"
@@ -121,6 +159,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textLabelRiwayat" />
+        app:layout_constraintTop_toBottomOf="@id/chipGroupFilter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

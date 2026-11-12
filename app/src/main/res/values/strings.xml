@@ -113,4 +113,9 @@
 
     <!-- P8: bagikan laporan ke WhatsApp -->
     <string name="tombol_bagikan">Bagikan Laporan ke WhatsApp</string>
+
+    <!-- P10: filter transaksi -->
+    <string name="filter_semua">Semua</string>
+    <string name="filter_masuk">Pemasukan</string>
+    <string name="filter_keluar">Pengeluaran</string>
 </resources>

@@ -46,6 +46,17 @@ class TransaksiFragment : Fragment() {
 
         // Riwayat transaksi memakai ListView dengan custom adapter
         binding.listTransaksi.adapter = TransaksiAdapter(requireContext(), transaksiList)
+
+        // Filter riwayat dengan ChipGroup
+        binding.chipGroupFilter.setOnCheckedStateChangeListener { _, checkedIds ->
+            val dipilih = checkedIds.firstOrNull()
+            val hasil = when (dipilih) {
+                binding.chipMasuk.id -> transaksiList.filter { it.jenis == "masuk" }
+                binding.chipKeluar.id -> transaksiList.filter { it.jenis == "keluar" }
+                else -> transaksiList
+            }
+            binding.listTransaksi.adapter = TransaksiAdapter(requireContext(), hasil)
+        }
     }
 
     private fun pesanKategori(kategori: String) {
