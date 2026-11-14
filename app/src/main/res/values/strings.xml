@@ -119,4 +119,8 @@
     <string name="filter_masuk">Pemasukan</string>
     <string name="filter_keluar">Pengeluaran</string>
     <string name="helper_nominal">Tidak boleh melebihi saldo kantong asal</string>
+
+    <!-- OnBoarding (P11) -->
+    <string name="tombol_lewati">Lewati</string>
+    <string name="tombol_mulai">Mulai Sekarang</string>
 </resources>

@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
+import com.example.nba_chitato.OnBoarding.OnBoardingActivity
 import com.example.nba_chitato.databinding.ActivitySplashScreenBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -31,9 +32,14 @@ class SplashScreenActivity : AppCompatActivity() {
         lifecycleScope.launch {
             delay(2000) //simulasi pengambilan data selama 2 detik
 
-            // Cek status login
+            // Cek apakah OnBoarding sudah pernah dilihat, lalu cek status login
+            val appPref = getSharedPreferences("app_pref", MODE_PRIVATE)
+            val onBoardingSelesai = appPref.getBoolean("onboarding_selesai", false)
             val isLogin = sharedPref.getBoolean("isLogin", false)
-            if (isLogin) {
+            if (!onBoardingSelesai) {
+                val intent = Intent(this@SplashScreenActivity, OnBoardingActivity::class.java)
+                startActivity(intent)
+            } else if (isLogin) {
                 val intent = Intent(this@SplashScreenActivity, BaseActivity::class.java)
                 startActivity(intent)
             } else {
