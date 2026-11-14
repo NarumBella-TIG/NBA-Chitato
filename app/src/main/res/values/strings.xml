@@ -120,6 +120,11 @@
     <string name="filter_keluar">Pengeluaran</string>
     <string name="helper_nominal">Tidak boleh melebihi saldo kantong asal</string>
 
+    <!-- Beranda (P11) -->
+    <string name="label_menu_cepat">Menu cepat</string>
+    <string name="label_tips">Tips kebun</string>
+    <string name="tombol_bagikan_pendek">Bagikan</string>
+
     <!-- OnBoarding (P11) -->
     <string name="tombol_lewati">Lewati</string>
     <string name="tombol_mulai">Mulai Sekarang</string>

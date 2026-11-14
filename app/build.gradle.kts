@@ -46,6 +46,7 @@ dependencies {
     implementation("androidx.gridlayout:gridlayout:1.0.0")
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation("com.tbuonomo:dotsindicator:5.1.0")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
     annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)

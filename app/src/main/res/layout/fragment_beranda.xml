@@ -34,7 +34,7 @@
             <View
                 android:id="@+id/background_header"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="150dp"
                 android:background="@drawable/bg_header_wave"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -53,54 +53,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/imgLogo"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:layout_marginTop="8dp"
-                android:contentDescription="Logo PalmSys"
-                android:src="@drawable/logo_palmsys"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/background_header" />
-
-            <ImageView
-                android:id="@+id/imgWordmark"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="Tulisan palmsys"
-                android:src="@drawable/wordmark_palmsys"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imgLogo" />
-
-            <TextView
-                android:id="@+id/textJudul"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/plus_jakarta_sans_extrabold"
-                android:text="@string/judul_aplikasi"
-                android:textColor="@color/hijau_pelepah"
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imgWordmark" />
-
             <TextView
                 android:id="@+id/textTagline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
                 android:fontFamily="@font/plus_jakarta_sans_regular"
                 android:text="@string/tagline"
-                android:textColor="@color/abu_teks"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/krem"
+                android:textSize="13sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textJudul" />
+                app:layout_constraintTop_toBottomOf="@id/textHalo" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardSaldo"
@@ -108,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginEnd="24dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="20dp"
                 app:cardBackgroundColor="@color/hijau_pelepah"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="0dp"
@@ -161,24 +125,128 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <Button
-                android:id="@+id/btnBagikan"
-                android:layout_width="0dp"
-                android:layout_height="56dp"
-                android:layout_marginHorizontal="24dp"
-                android:layout_marginTop="16dp"
-                android:backgroundTint="@color/emas_koin"
+            <TextView
+                android:id="@+id/textLabelMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
                 android:fontFamily="@font/plus_jakarta_sans_bold"
-                android:text="@string/tombol_bagikan"
+                android:text="@string/label_menu_cepat"
                 android:textColor="@color/hijau_pelepah"
-                android:textSize="15sp"
-                app:cornerRadius="16dp"
-                app:icon="@drawable/ic_share"
-                app:iconGravity="textStart"
-                app:iconTint="@color/hijau_pelepah"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cardSaldo" />
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridMenuCepat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                app:columnCount="2"
+                app:useDefaultMargins="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textLabelMenu">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMenuKantong"
+                    android:layout_height="64dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/plus_jakarta_sans_bold"
+                    android:text="@string/menu_kantong"
+                    android:textAllCaps="false"
+                    android:textColor="@color/hijau_pelepah"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:icon="@drawable/ic_kantong"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/emas_koin"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    app:strokeColor="@color/krem_kartu"
+                    app:strokeWidth="1dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMenuTransaksi"
+                    android:layout_height="64dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/plus_jakarta_sans_bold"
+                    android:text="@string/menu_transaksi"
+                    android:textAllCaps="false"
+                    android:textColor="@color/hijau_pelepah"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:icon="@drawable/ic_transaksi"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/emas_koin"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    app:strokeColor="@color/krem_kartu"
+                    app:strokeWidth="1dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMenuHarga"
+                    android:layout_height="64dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/plus_jakarta_sans_bold"
+                    android:text="@string/menu_harga"
+                    android:textAllCaps="false"
+                    android:textColor="@color/hijau_pelepah"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:icon="@drawable/ic_harga"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/emas_koin"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    app:strokeColor="@color/krem_kartu"
+                    app:strokeWidth="1dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBagikan"
+                    android:layout_height="64dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/plus_jakarta_sans_bold"
+                    android:text="@string/tombol_bagikan_pendek"
+                    android:textAllCaps="false"
+                    android:textColor="@color/hijau_pelepah"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:icon="@drawable/ic_share"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/emas_koin"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal"
+                    app:strokeColor="@color/krem_kartu"
+                    app:strokeWidth="1dp" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <TextView
+                android:id="@+id/textLabelTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/plus_jakarta_sans_bold"
+                android:text="@string/label_tips"
+                android:textColor="@color/hijau_pelepah"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gridMenuCepat" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTips"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="6dp"
+                android:nestedScrollingEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textLabelTips" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
