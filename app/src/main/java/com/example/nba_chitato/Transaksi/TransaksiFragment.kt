@@ -15,13 +15,13 @@ class TransaksiFragment : Fragment() {
 
     // Data contoh riwayat transaksi kebun (foto pihak transaksi dari URL)
     private val transaksiList = listOf(
-        TransaksiModel("Jual TBS 1,2 ton", "14 Okt · PT Sawit Jaya", 3780000, "masuk", "https://avatarapi.runflare.run/public/11"),
-        TransaksiModel("Upah pemanen", "14 Okt · Pak Udin", 900000, "keluar", "https://avatarapi.runflare.run/public/12"),
-        TransaksiModel("Pupuk NPK 2 karung", "10 Okt · Toko Tani Makmur", 760000, "keluar", "https://avatarapi.runflare.run/public/13"),
-        TransaksiModel("Jual TBS 0,9 ton", "2 Okt · RAM Pak Hasan", 2835000, "masuk", "https://avatarapi.runflare.run/public/14"),
-        TransaksiModel("Upah pemupukan", "1 Okt · Bu Rina", 400000, "keluar", "https://avatarapi.runflare.run/public/15"),
-        TransaksiModel("Servis egrek dan dodos", "28 Sep · Bengkel Jaya", 150000, "keluar", "https://avatarapi.runflare.run/public/16"),
-        TransaksiModel("Jual TBS 1,1 ton", "18 Sep · PT Sawit Jaya", 3410000, "masuk", "https://avatarapi.runflare.run/public/17")
+        TransaksiModel("Jual TBS 1,2 ton", "14 Okt · PT Sawit Jaya", 3780000, "masuk", "https://api.dicebear.com/9.x/notionists/png?backgroundColor=f1e9d8&seed=PTSawitJaya"),
+        TransaksiModel("Upah pemanen", "14 Okt · Pak Udin", 900000, "keluar", "https://api.dicebear.com/9.x/notionists/png?backgroundColor=f1e9d8&seed=PakUdin"),
+        TransaksiModel("Pupuk NPK 2 karung", "10 Okt · Toko Tani Makmur", 760000, "keluar", "https://api.dicebear.com/9.x/notionists/png?backgroundColor=f1e9d8&seed=TokoTaniMakmur"),
+        TransaksiModel("Jual TBS 0,9 ton", "2 Okt · RAM Pak Hasan", 2835000, "masuk", "https://api.dicebear.com/9.x/notionists/png?backgroundColor=f1e9d8&seed=PakHasan"),
+        TransaksiModel("Upah pemupukan", "1 Okt · Bu Rina", 400000, "keluar", "https://api.dicebear.com/9.x/notionists/png?backgroundColor=f1e9d8&seed=BuRina"),
+        TransaksiModel("Servis egrek dan dodos", "28 Sep · Bengkel Jaya", 150000, "keluar", "https://api.dicebear.com/9.x/notionists/png?backgroundColor=f1e9d8&seed=BengkelJaya"),
+        TransaksiModel("Jual TBS 1,1 ton", "18 Sep · PT Sawit Jaya", 3410000, "masuk", "https://api.dicebear.com/9.x/notionists/png?backgroundColor=f1e9d8&seed=PTSawitJaya")
     )
 
     override fun onCreateView(
