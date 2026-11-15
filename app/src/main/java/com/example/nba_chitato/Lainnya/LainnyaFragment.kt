@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.nba_chitato.AuthActivity
 import com.example.nba_chitato.MainReesultActivity
 import com.example.nba_chitato.ProfilActivity
 import com.example.nba_chitato.WebViewActivity
@@ -60,6 +61,10 @@ class LainnyaFragment : Fragment() {
                     editor.apply()
 
                     dialog.dismiss()
+
+                    // Kembali ke halaman login
+                    val intent = Intent(requireContext(), AuthActivity::class.java)
+                    startActivity(intent)
                     requireActivity().finish()
                 }
                 .setNegativeButton("Tidak") { dialog, _ ->
